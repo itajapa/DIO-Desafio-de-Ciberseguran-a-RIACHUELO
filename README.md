@@ -33,7 +33,7 @@ Durante o bootcamp, estudei o funcionamento e aplicabilidade das seguintes ferra
 
 Obs: Essas ferramentas foram abordadas conceitualmente, mas não foram utilizadas na simulação prática descrita neste repositório.
 
-💻 Ambiente Prático Utilizado
+# 💻 Ambiente Prático Utilizado
 
 - Kali Linux
 - Metasploitable 2
