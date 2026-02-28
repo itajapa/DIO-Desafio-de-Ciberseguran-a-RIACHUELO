@@ -24,12 +24,14 @@ O objetivo foi compreender conceitos fundamentais de autenticação, técnicas d
 🛠️ Ferramentas Estudadas (Conceito)
 
 Durante o bootcamp, estudei o funcionamento e aplicabilidade das seguintes ferramentas:
+
 - Hydra
 - Ncrack
 - John the Ripper
 - WPScan
 - Patator
-Obs: Essas ferramentas foram abordadas conceitualmente, mas não foram utilizadas na simulação prática descrita neste repositório.
+
+⚠️ Obs: Essas ferramentas foram abordadas conceitualmente, mas não foram utilizadas na simulação prática descrita neste repositório.
 
 💻 Ambiente Prático Utilizado
 
@@ -52,7 +54,7 @@ Criação de listas de usuários e senhas para uso em ataques automatizados.
 📌 Exercício 2 – Ataque HTTP com Medusa
 
 Ferramenta utilizada: Medusa
-Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
+⚠️Objetivo: realizar ataque de força bruta contra formulário de login (DVWA).
 
 - medusa -h 192.168.56.101 -U users.txt -P pass.txt -M http \
 - -m PAGE:'/dvwa/login.php' \
