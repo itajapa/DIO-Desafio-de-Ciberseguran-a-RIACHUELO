@@ -1,4 +1,4 @@
-# DIO-Desafio-de-Ciberseguran-a-RIACHUELO
+# SIMULANDO UM ATAQUE BRUTE FORCE DE SENHAS COM MEDUSA E KALI LINUX
 # 🔐 Desafio de Cibersegurança – Bootcamp DIO.me + Riachuelo
 
 Este repositório documenta minha participação no desafio prático de Cibersegurança do Bootcamp da DIO.me em parceria com a Riachuelo.
