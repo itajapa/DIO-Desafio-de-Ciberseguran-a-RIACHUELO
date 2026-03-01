@@ -1,8 +1,6 @@
 # Simulando um Ataque Brute Force de Senhas com Medusa e Kali Linux 
 # 🔐 Desafio de Cibersegurança – Bootcamp DIO.me + Riachuelo
 
-Este repositório documenta minha participação no desafio prático de Cibersegurança do Bootcamp da DIO.me em parceria com a Riachuelo.
-
 O objetivo foi compreender conceitos fundamentais de autenticação, técnicas de ataque e aplicar testes práticos em ambiente controlado utilizando Kali Linux e Metasploitable 2.
 
 # 📚 Conceitos Estudados
